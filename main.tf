@@ -8,7 +8,7 @@ resource "aws_instance" "kamal" {
     subnet_id     = "subnet-0ac81a3030185dcb3"
 }
 
-resource "aws_s3_bucket" "example" {
+resource "aws_s3_bucket_acl" "example" {
   bucket = "my-tf-test-bucket"
-  acl    = "aws_s3_bucket_acl"
+  acl    = "private"
 }
