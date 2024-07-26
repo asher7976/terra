@@ -14,4 +14,6 @@ resource "aws_s3_bucket" "my_bucket7" {
 	Name          = "MyS3Buckets"
 	Environment    = "reProduction"
   }
+
+
 }
