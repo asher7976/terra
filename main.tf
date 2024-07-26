@@ -9,7 +9,7 @@ resource "aws_instance" "kamal" {
 }
 
 resource "aws_s3_bucket" "my_bucket7" {
-  bucket  = "unique-bucket-name"
+  bucket  = "kamal7997579910"
   tags    = {
 	Name          = "MyS3Buckets"
 	Environment    = "reProduction"
