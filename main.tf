@@ -15,5 +15,13 @@ resource "aws_s3_bucket" "my_bucket7" {
 	Environment    = "reProduction"
   }
 
+resource "aws_dynamodb_table" "terraform_lock" {
+  Name    = "terraform_lock"
+  billing_mode = "pay-per-request"
+  hash_key   = "LockID"
 
-}
+  attribute {
+    name = "LOCKID"
+    type = "S"
+  }
+} 
