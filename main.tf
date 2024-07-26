@@ -13,7 +13,7 @@ resource "aws_s3_bucket" "my_bucket7" {
   tags    = {
 	Name          = "MyS3Buckets"
 	Environment    = "reProduction"
-  }
+}
 
 resource "aws_dynamodb_table" "terraform_lock" {
   Name    = "terraform_lock"
