@@ -8,11 +8,10 @@ resource "aws_instance" "kamal" {
     subnet_id     = "subnet-0ac81a3030185dcb3"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+resource "aws_s3_bucket" "my_bucket" {
+  bucket  = "my-unique-bucket-name"
+  tags    = {
+	Name          = "MyS3Bucket"
+	Environment    = "Production"
   }
 }
